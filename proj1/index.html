@@ -145,7 +145,9 @@
 
 <h3 align="middle">Part 3: Transforms</h3>
 
-<p> Fig 5. shows the result of this task without any modification in the pose. </p>
+<p> Fig 5. shows the result of this task without any modification in the pose. 
+  Fig 6 shows a modified version where a person is running.
+</p>
 
 <div align="middle">
   <table>
@@ -153,6 +155,10 @@
       <td>
         <img src="images/2.png" align="middle" width="500px"/>
         <figcaption align="middle">Fig5. file svg/transforms/robot.svg</figcaption>
+      </td>
+      <td>
+        <img src="images/7.png" align="middle" width="500px"/>
+        <figcaption align="middle">Fig6. modified file svg/transforms/robot.svg</figcaption>
       </td>
     </tr>
   </table>
@@ -169,14 +175,31 @@
   Also this allows us to interpolate some value of points, like color.
 </p>
 
-<p> Fig6. shows the result of this task. The color is continuous and change smoothly. </p>
+<p>
+  Fig 7 below illustrates this concept by giving the three point of a triangle different colors: red, green and blue.
+  The color inside is interpolated by the colors of the three nodes. 
+  It changes smoothly.
+</p>
+
+<div align="middle">
+  <table>
+    <tr>
+      <td>
+        <img src="images/6.png" align="middle" width="500px"/>
+        <figcaption align="middle">Fig7. Illustration of bartcentric coordinate.</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p> Fig8. shows the result of this task. The color is continuous and change smoothly. </p>
 
 <div align="middle">
   <table>
     <tr>
       <td>
         <img src="images/3.png" align="middle" width="500px"/>
-        <figcaption align="middle">Fig6. file svg/basic/test7.svg</figcaption>
+        <figcaption align="middle">Fig8. file svg/basic/test7.svg</figcaption>
       </td>
     </tr>
   </table>
@@ -193,7 +216,7 @@
 </p>
 
 <p>
-  Fig 7-10 below show the results of different pixel sampling methods and different sample rates on the same picture. 
+  Fig 9-12 below show the results of different pixel sampling methods and different sample rates on the same picture. 
   No matter what sample rate, bilinear pixel sampling is more smooth than nearest, especially on the edges. 
   The reason is similar to super-sampling: bilinear mixes up 4 texels to produce buffer colors instead of just using one texel color. 
   Sample rate matters very little. 
@@ -205,21 +228,21 @@
     <tr>
       <td>
         <img src="images/4-1.png" align="middle" width="450px"/>
-        <figcaption align="middle">Fig7. nearest pixel sampleing, sample rate=1, on svg/texmap/test5.svg</figcaption>
+        <figcaption align="middle">Fig9. nearest pixel sampleing, sample rate=1, on svg/texmap/test5.svg</figcaption>
       </td>
       <td>
         <img src="images/4-2.png" align="middle" width="450px"/>
-        <figcaption align="middle">Fig8. bilinear pixel sampleing, sample rate=1, on svg/texmap/test5.svg</figcaption>
+        <figcaption align="middle">Fig10. bilinear pixel sampleing, sample rate=1, on svg/texmap/test5.svg</figcaption>
       </td>
     </tr>
     <tr>
       <td>
         <img src="images/4-3.png" align="middle" width="450px"/>
-        <figcaption align="middle">Fig9. nearest pixel sampleing, sample rate=16, on svg/texmap/test5.svg</figcaption>
+        <figcaption align="middle">Fig11. nearest pixel sampleing, sample rate=16, on svg/texmap/test5.svg</figcaption>
       </td>
       <td>
         <img src="images/4-4.png" align="middle" width="450px"/>
-        <figcaption align="middle">Fig10. bilinear pixel sampleing, sample rate=16, on svg/texmap/test5.svg</figcaption>
+        <figcaption align="middle">Fig12. bilinear pixel sampleing, sample rate=16, on svg/texmap/test5.svg</figcaption>
       </td>
     </tr>
   </table>
@@ -235,7 +258,7 @@
 </p>
 
 <p>
-  The following Fig 11-14 show the results under different level sampling methods and different pixel sampling methods. 
+  The following Fig 13-16 show the results under different level sampling methods and different pixel sampling methods. 
   We can see that in some area, nearest level sampling gives a more natral picture. 
   In most area, bilinear pixel sampling is more natral than nearest one.
 </p>
@@ -246,21 +269,21 @@
     <tr>
       <td>
         <img src="images/5-1.png" align="middle" width="450px"/>
-        <figcaption align="middle">Fig11. zero level sampling, nearest pixel sampling, on svg/texmap/test1.svg</figcaption>
+        <figcaption align="middle">Fig13. zero level sampling, nearest pixel sampling, on svg/texmap/test1.svg</figcaption>
       </td>
       <td>
         <img src="images/5-2.png" align="middle" width="450px"/>
-        <figcaption align="middle">Fig12. zero level sampling, bilinear pixel sampling, on svg/texmap/test1.svg</figcaption>
+        <figcaption align="middle">Fig14. zero level sampling, bilinear pixel sampling, on svg/texmap/test1.svg</figcaption>
       </td>
     </tr>
     <tr>
       <td>
         <img src="images/5-3.png" align="middle" width="450px"/>
-        <figcaption align="middle">Fig13. nearest level sampling, nearest pixel sampling, on svg/texmap/test1.svg</figcaption>
+        <figcaption align="middle">Fig15. nearest level sampling, nearest pixel sampling, on svg/texmap/test1.svg</figcaption>
       </td>
       <td>
         <img src="images/5-4.png" align="middle" width="450px"/>
-        <figcaption align="middle">Fig14. nearest level sampling, bilinear pixel sampling, on svg/texmap/test1.svg</figcaption>
+        <figcaption align="middle">Fig16. nearest level sampling, bilinear pixel sampling, on svg/texmap/test1.svg</figcaption>
       </td>
     </tr>
   </table>
